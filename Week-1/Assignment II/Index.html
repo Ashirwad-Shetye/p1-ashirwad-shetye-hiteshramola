@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player UI by Ashirwad_Shetye</title>
+    <script src="https://kit.fontawesome.com/e2a0ebe305.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<!-- Split the UI in two major sections -->
+
+    <div class="main">
+
+ <!-- Left navigation bar section -->
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-volume-high"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            </ul>
+        </div>
+
+<!-- Right player section -->
+
+        <div class="track-container">
+            <div class="head">
+                <div class="chartboard">
+                    <img src="Asset/img 1.jpg" alt="CattyBoard 2036 Hot 100 chart" class="coverart">
+                    <div class="trackId">
+                        <h1><strong>CattyBoard Top 100 Singles Charts (11.06.36)</strong></h1>
+                        <div class="artist-name">Unknown Artist</div>
+                        <div class="playlist-name">2016, Charts, 100 Songs</div>
+
+<!-- playlist navigation -->
+
+                        <nav>
+                            <button type="button" class="btn-play"><i class="fa-solid fa-play"></i>  Play all</button>
+                            <button type="button" class="btn-play"><i class="fa-solid fa-plus"></i>  Add to</button>
+                            <button type="button" class="btn-play"><i class="fa-solid fa-plus"></i>  Playlist</button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+<!-- Track list table -->
+            <div class="track-list">
+                <table>
+                    <tbody>
+                        <tr>
+                        <td>1. One Dance</td>
+                        <td>Crake feat.CatKid & Cyla</td>
+                        <td>2:54</td>
+                        <td><button class="btn-sync">CATTY CLOUD SYNC</button></td>
+                    </tr>
+                    <tr>
+                        <td>2. Panda</td>
+                        <td>Cattee</td>
+                        <td>4:06</td>
+                        <td><button class="btn-sync">CATTY CLOUD SYNC</button></td>
+                    </tr>
+                    <tr>
+                        <td>3. Can't Stop the Feeling!</td>
+                        <td>Catin Cimberlake</td>
+                        <td>3:56</td>
+                        <td><button class="btn-sync">CATTY CLOUD SYNC</button></td>
+                    </tr>
+                    <tr>
+                        <td>4. Work From Home</td>
+                        <td>Cat Harmony feat.Colla</td>
+                        <td>3:34</td>
+                        <td><button class="btn-sync">CATTY CLOUD SYNC</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer player section -->
+
+    <div class="footer">
+        <div class="track-info">
+            <img src="Asset/img 1.jpg" alt="CattyBoard 2036 Hot 100 Chart" class="player-coverart">
+            <div class="song-description">
+                <p class="title"><strong>If It Ain't Love</strong></p>
+                <p class="artist">Catson Derulo</p>
+            </div>
+        </div>
+
+<!-- Footer player controls -->
+
+        <div class="track-controls">
+            <button class="btn"><i class="fa-solid fa-backward"></i></button>
+            <button class="btn"><i class="fa-solid fa-pause"></i></button>
+            <button class="btn"><i class="fa-solid fa-forward"></i></button>
+            <button class="btn"><i class="fa-solid fa-rotate-right"></i></button>
+            <button class="btn"><i class="fa-solid fa-shuffle"></i></button>
+        </div>
+    </div>
+</body>
+</html>

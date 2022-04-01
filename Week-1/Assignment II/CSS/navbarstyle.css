@@ -1,0 +1,92 @@
+
+
+.navbar {
+    background: #eeeeee;
+    position: fixed;
+    width: var(--navbar-width);
+    height: 100%;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar ul li{
+    opacity: 0.5;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.navbar ul li:hover {
+    opacity: 1;
+}
+
+
+/* button color coding */ 
+
+.fa-bars {
+    color: black;
+}
+
+.fa-house {
+    color: black;
+}
+
+.fa-magnifying-glass {
+    color: black;
+}
+
+.fa-volume-high {
+    color: black;
+}
+
+.fa-user {
+    color: black;
+}
+
+.fa-spotify {
+    color: black;
+}
+
+.fa-gear {
+    color: black;
+}
+
+.fa-bars {
+    color: black;
+}
+
+.fa-soundcloud {
+    color: black;
+}
+
+@media all and (max-width:750px) {
+    .navbar {
+        background: #eeeeee;
+        position: fixed;
+        width: var(--navbar-width);
+        height: 100%;
+    }
+    
+    .navbar ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .navbar ul li{
+        opacity: 0.5;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+}

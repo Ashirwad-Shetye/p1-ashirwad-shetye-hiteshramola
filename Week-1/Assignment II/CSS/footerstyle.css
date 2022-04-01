@@ -1,0 +1,64 @@
+
+.footer {
+    background: #6897bb;
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--footer-height);
+
+    color: #ddd;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer img {
+    padding: 10px;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+}
+
+.track-info {
+    display: flex;
+    color: white;
+    font-size: 13px;
+
+}
+
+.song-description {
+    padding-top: 10px;
+    line-height: 2.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-controls {
+    background: transparent;
+    padding:auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.btn {
+    opacity: 0.8;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+    font-size: 18px;
+
+}
+    

@@ -1,0 +1,25 @@
+@import url(footerstyle.css);
+@import url(headerstyle.css);
+@import url(mainstyle.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navbar-width: 40px;
+    --footer-height: 100px;
+}
+
+
+
+body{
+    max-height: 100vh;
+}
+
+
