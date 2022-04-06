@@ -1,2 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&family=Poppins:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+@import url(content.css);
 
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #01100A;
+}
+
+:root {
+    --h1-width: 100vh;
+    --banner-height: 280px;
+}
+
+
+
+header {
+    width: 100%;
+    height: var(--banner-height);
+    background-image: url(img-2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-img h1 {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 1%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110px;
+    text-transform: uppercase;
+    margin: 0; 
+}
+
+.banner-img h3 {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 15px;
+    color: #eeeeee;
+}
