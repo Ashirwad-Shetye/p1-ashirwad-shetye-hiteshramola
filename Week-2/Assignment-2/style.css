@@ -1,0 +1,88 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --height:80px;
+    --width:80px;
+}
+
+body {
+    margin-top: 150px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 70px;
+    height: calc(var(--height) + var(--height));
+    width: calc(var(--height) + var(--height));
+    align-items: center;
+}
+
+h1 {
+    padding: 7.5%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    transition: 5s linear;
+    transition-timing-function: ease-in;
+
+}
+
+#box-1 {
+    height: var(--height);
+    width: var(--width);
+    background: red;
+}
+
+#box-2 {
+    height: var(--height);
+    width: var(--width);
+    background: yellow;
+}
+
+#box-3 {
+    height: var(--height);
+    width: var(--width);
+    background: blue;
+}
+
+#box-4 {
+    height: var(--height);
+    width: var(--width);
+    background: green;
+}
+
+/* transformation */
+
+.grid:hover #box-1{
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.grid:hover #box-2{
+    transform: rotate(-90deg);
+    transform-origin: top right;
+
+}
+.grid:hover #box-3{
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+
+.grid:hover #box-4{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+
