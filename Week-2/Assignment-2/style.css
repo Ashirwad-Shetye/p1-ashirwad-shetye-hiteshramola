@@ -20,10 +20,11 @@ body {
     height: calc(var(--height) + var(--height));
     width: calc(var(--height) + var(--height));
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    padding: 7.5%;
+    padding: 4%;
     position: absolute;
     text-align: center;
     justify-content: center;
@@ -35,54 +36,59 @@ h1 {
     padding: 0px;
     display: grid;
     grid-template-columns: auto auto;
-    transition: 5s linear;
-    transition-timing-function: ease-in;
-
 }
 
 #box-1 {
     height: var(--height);
     width: var(--width);
     background: red;
+    transition: transform 250ms linear;
+    transform-origin: top left;
 }
 
 #box-2 {
     height: var(--height);
     width: var(--width);
     background: yellow;
+    transition: transform 250ms linear;
+    transform-origin: top right;
 }
 
 #box-3 {
     height: var(--height);
     width: var(--width);
     background: blue;
+    transition: transform 250ms linear;
+    transform-origin: bottom left;
 }
 
 #box-4 {
     height: var(--height);
     width: var(--width);
     background: green;
+    transition: transform 250ms linear;
+    transform-origin: bottom right;
+    
 }
 
 /* transformation */
 
 .grid:hover #box-1{
     transform: rotate(90deg);
-    transform-origin: top left;
+    
 }
 
 .grid:hover #box-2{
     transform: rotate(-90deg);
-    transform-origin: top right;
+    
 
 }
 .grid:hover #box-3{
     transform: rotate(-90deg);
-    transform-origin: bottom left;
+    
 }
 
 .grid:hover #box-4{
     transform: rotate(90deg);
-    transform-origin: bottom right;
+    
 }
-

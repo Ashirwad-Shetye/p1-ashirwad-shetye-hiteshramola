@@ -5,10 +5,10 @@
     height: 100%;
     position: relative;
     top: 0px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    background:  #022114;
+    background:  #081004;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -19,8 +19,17 @@
 }
 
 .content h2{
+    display: flex;
+    justify-content: center;
     text-align: center;
     color: #ffffff;
+    font-family: 'playfair display', serif;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.content h2 span{
     font-family: 'playfair display', serif;
     font-size: 30px;
     margin: 0;
@@ -37,7 +46,7 @@
 }
 
 .content img{
-    position: relative;
+    padding: 0;
     object-fit: cover;
     margin: 0;
     width: 400px;
@@ -50,7 +59,7 @@
 }
 
 .grid-3{
-    padding: 20px;
+    padding: 10px;
 }
 
 .sep_grid-1 {
@@ -60,4 +69,19 @@
     font-size: 20px;
     margin: 0;
     padding-top: 15px;
+}
+
+/* making responsive */
+
+@media screen and (max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .grid-3 {
+        padding: 0;
+    }
 }

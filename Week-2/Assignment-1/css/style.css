@@ -16,7 +16,7 @@ body{
 
 :root {
     --h1-width: 100vh;
-    --banner-height: 280px;
+    --banner-height: 300px;
 }
 
 
@@ -49,9 +49,22 @@ header {
     margin: 0; 
 }
 
+
 .banner-img h3 {
     position: relative;
     font-size: 16px;
     letter-spacing: 15px;
     color: #eeeeee;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-img h1 {
+        padding-top: 18%;
+    }
+    
+    .banner-img h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
 }
