@@ -1,0 +1,143 @@
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    background:  #081004;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    
+    
+}
+
+.content h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'playfair display', serif;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.content p{
+    text-align: center;
+    color: #ffffff;
+    font-family:'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+
+.content img{
+    padding: 0;
+    object-fit: cover;
+    overflow-y: hidden;
+    margin: 0;
+    width: 100%;
+    height: 550px;
+}
+
+
+/* grid contents */
+
+.grid-1, .grid-2, .grid-3 {
+    margin: 40px 20px;
+    align-items: center;
+}
+
+/*
+.grid-3{
+    background-image: url(img-8.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+.grid-4 {
+    margin: 40px 20px;
+    align-items: left;
+}
+
+.sep_grid-1 {
+    text-align: left;
+    color: #ffffff;
+    font-family:'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 0px;
+}
+
+.sep_grid-1 h2 {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'playfair display', serif;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.sep_grid-2 {
+    text-align: left;
+    color: #ffffff;
+    font-family:'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 75px;
+}
+
+.sep_grid-2 h2 {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'playfair display', serif;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* making responsive */
+
+@media screen and (max-width: 768px){
+    .content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .grid-3{
+        background-image: url(img-8.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: auto;
+    }
+    
+    .sep_grid-1, .sep_grid-2 {
+        text-align: center;
+    }
+    
+    .sep_grid-1 h2, .sep_grid-2 h2 {
+        justify-content: center;
+        text-align: center;
+    }
+}

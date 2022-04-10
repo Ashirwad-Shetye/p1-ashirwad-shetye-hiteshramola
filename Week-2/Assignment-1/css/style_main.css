@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&family=Poppins:ital,wght@1,600&family=Roboto:wght@300&display=swap');
-@import url(content.css);
+@import url(content_sub.css);
+@import url(form_sub.css);
+@import url(aboutme_sub.css);
 
 * {
     box-sizing: border-box;
@@ -16,10 +18,11 @@ body{
 
 :root {
     --h1-width: 100vh;
-    --banner-height: 300px;
+    --banner-height: 350px;
 }
 
 
+/* banner section */
 
 header {
     width: 100%;
@@ -57,12 +60,37 @@ header {
     color: #eeeeee;
 }
 
+/* making responsive */
+
 @media screen and (max-width: 768px) {
+
+    .header {
+        height: 250px;
+    }
+
     .banner-img h1 {
         padding-top: 18%;
     }
     
     .banner-img h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .header {
+        height: 250px;
+    }
+
+    .banner-img h1 {
+        padding-top: 8%;
+    }
+    
+    .banner-img h3 {
+        padding-top: 0px;
         font-size: 14px;
         letter-spacing: 1px;
     }

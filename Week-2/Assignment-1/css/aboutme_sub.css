@@ -1,0 +1,87 @@
+
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #081004;
+    height: 100px;
+    overflow: hidden;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    grid: 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 90px;
+}
+
+.aboutme ul {
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fa-instagram {
+    color: #f5f5f5;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.fa-github {
+    color: #f5f5f5;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.fa-twitter {
+    color: #f5f5f5;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.fa-discord {
+    color: #f5f5f5;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* hover links */
+
+.fa-instagram:hover {
+    font-size: 22px;
+    opacity: 1;
+}
+
+.fa-github:hover {
+    font-size: 22px;
+    opacity: 1;
+}
+
+.fa-twitter:hover {
+    font-size: 22px;
+    opacity: 1;
+}
+
+.fa-discord:hover {
+    font-size: 22px;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutme {
+        gap: 10px;
+    }
+
+    .aboutme ul {
+    text-align: left;
+    }
+}
