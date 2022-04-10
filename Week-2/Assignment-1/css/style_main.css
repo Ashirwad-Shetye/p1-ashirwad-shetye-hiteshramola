@@ -16,6 +16,29 @@ body{
     background: #01100A;
 }
 
+/* scrollbar section */
+
+body::-webkit-scrollbar {
+    background-color:transparent;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #eeeeee;
+    border-radius: 16px;
+    border: 1px solid transparent;
+}
+
+body::-webkit-scrollbar-button {
+    display:none;
+}
+
+/* var */
+
 :root {
     --h1-width: 100vh;
     --banner-height: 350px;

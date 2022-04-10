@@ -49,17 +49,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* btn animation */
+
 .btn-submit{
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
-    color: #000000;
+    color: #ffffff;
     padding: 10px 20px;
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+.btn-submit:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* making responsive */
